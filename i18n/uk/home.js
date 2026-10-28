@@ -7,6 +7,6 @@ Novara.addStrings("uk", "home", {
   stats: [
     { value: "1", label: "завершених проєктів" },
     { value: "0 млн", label: "завантажень наших продуктів" },
-    { value: "1 років", label: "роботи без шаблонів" },
+    { value: "1 рік", label: "роботи" },
   ]
 });
