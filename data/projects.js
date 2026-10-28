@@ -13,27 +13,25 @@
    ===================================================================== */
 window.PROJECTS = [
   {
-    "id": "lumo",
-    "name": "Lumo",
+    "id": "Air Defense Ops",
+    "name": "Air Defense Ops",
     "category": "Застосунки",
     "year": 2026,
-    "platform": "iOS, Android",
-    "version": "2.4",
-    "size": "38 МБ",
-    "rating": "4,8 ★",
+    "platform": "iOS, Android, Windows",
+    "version": "0.25.3 ",
+    "size": "138 МБ",
+    "rating": "",
     "shape": "s2",
     "colors": [
       "#FFD23F",
       "#6C4BFF"
     ],
     "image": "",
-    "description": "Застосунок, що нагадує пити воду. Ніжно, без криків: підлаштовується під ваш розклад і погоду за вікном.",
+    "description": "You must defend the country by repelling air attacks.",
     "features": [
-      "Розумні нагадування за вашим розкладом",
-      "Віджет на екран блокування",
-      "Спільні челенджі з друзями"
+      ""
     ],
-    "result": "120 000 завантажень за пів року",
+    "result": "",
     "tech": [
       "Swift",
       "Kotlin",
