@@ -10,12 +10,7 @@ Novara.addStrings("en", "projects", {
   },
   servicesTitle: "What we make",
   services: [
-    { title: "Apps and platforms", text: "Mobile and web apps, services, user accounts, internal company systems." },
-    { title: "Websites and online stores", text: "From a one-week business card site to a store with payments, inventory and delivery." },
-    { title: "AI and automation", text: "Chat assistants, image recognition, automation of routine work." },
-    { title: "Games and interactive", text: "Story and casual games, AR quests, interactive installations." },
-    { title: "Branding and interface design", text: "Identity, design systems, animation, investor presentations." },
-    { title: "Physical things", text: "Furniture, electronics, interiors. We make them when a digital product isn’t enough." }
+    { title: "Games and interactive", text: "Story and casual games." }
   ],
   teamTitle: "Team"
 });
