@@ -7,6 +7,5 @@ Novara.addStrings("en", "home", {
   stats: [
     { value: "1", label: "projects completed" },
     { value: "0M", label: "downloads of our products" },
-    { value: "1 years", label: "of work without templates" },
   ]
 });
