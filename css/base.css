@@ -1,4 +1,3 @@
-/* Основа: змінні кольорів, типографіка, шапка, футер, кнопки, спільні блоки */
 :root{--bg:#fff;--surface:#fff;--soft:#F4F4F2;--ink:#111;--muted:#74747A;--line:#E4E4E1;--on:#fff;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){
@@ -49,7 +48,6 @@ footer{align-items:center}
 header{background:color-mix(in srgb,var(--soft) 62%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 body::before{background:color-mix(in srgb,var(--soft) 62%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 
-/* --- шапка: логотип, меню, перемикач мови --- */
 .logo{text-decoration:none;color:inherit}
 nav a{text-decoration:none}
 .lang{display:inline-flex;gap:2px;padding:3px;background:var(--bg);border-radius:99px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
