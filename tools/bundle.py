@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Збирає весь сайт в один файл dist/index.html (CSS, JS і іконка вбудовуються).
-Запуск з кореня проєкту:  python3 tools/bundle.py"""
 import os, re, urllib.parse
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rd = lambda p: open(os.path.join(root, p), encoding="utf-8").read()
