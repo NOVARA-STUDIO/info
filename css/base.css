@@ -1,0 +1,58 @@
+/* Основа: змінні кольорів, типографіка, шапка, футер, кнопки, спільні блоки */
+:root{--bg:#fff;--surface:#fff;--soft:#F4F4F2;--ink:#111;--muted:#74747A;--line:#E4E4E1;--on:#fff;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0C0C0D;--surface:#0C0C0D;--soft:#17171A;--ink:#F2F2F0;--muted:#8E8E95;--line:#26262A;--on:#0C0C0D;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0C0C0D;--surface:#0C0C0D;--soft:#17171A;--ink:#F2F2F0;--muted:#8E8E95;--line:#26262A;--on:#0C0C0D;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1{font-family:Inter,system-ui,sans-serif;font-weight:500;margin:0;line-height:1.1;letter-spacing:-.03em}
+h2{font-family:Inter,system-ui,sans-serif;font-weight:500;margin:0;line-height:1.1;letter-spacing:-.03em}
+h3{font-family:Inter,system-ui,sans-serif;font-weight:500;margin:0;line-height:1.1;letter-spacing:-.03em}
+h4{font-family:Inter,system-ui,sans-serif;font-weight:500;margin:0;line-height:1.1;letter-spacing:-.03em}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;justify-content:space-between;gap:14px;padding:22px clamp(20px,5vw,64px)}
+.logo{font:600 14px Inter,sans-serif;letter-spacing:.02em;white-space:nowrap}
+.logo sup{font-size:.6em;font-weight:400}
+nav{display:flex;gap:26px}
+nav a{font:400 14px Inter,sans-serif;background:none;color:var(--muted);border:0;padding:4px 0;cursor:pointer;border-bottom:1px solid transparent}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ink)}
+main{max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 120px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin:0;background:var(--ink);color:var(--on);font:500 14px Inter,sans-serif;border:1px solid var(--ink);border-radius:99px;padding:12px 24px;cursor:pointer;text-decoration:none;transition:opacity .15s}
+.btn:hover{opacity:.8}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn.dl{background:var(--ink)}
+h2{font-size:clamp(28px,4vw,44px);padding:90px 0 28px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--on);padding:10px 20px;border-radius:99px;font-size:14px;display:none;z-index:40}
+.toast.on{display:block}
+
+footer{padding:32px clamp(20px,5vw,64px);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+:root{--acc:#3D5AFE;--acc-soft:#E8ECFF}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--acc:#8FA2FF;--acc-soft:#1B2142}
+}
+:root[data-theme="dark"]{--acc:#8FA2FF;--acc-soft:#1B2142}
+body{background:var(--soft)}
+body::before{background:var(--soft)}
+header{background:var(--soft)}
+.btn{background:var(--acc);border-color:var(--acc);color:#fff;box-shadow:0 6px 18px -8px var(--acc)}
+.btn.dl{background:var(--acc);border-color:var(--acc);color:#fff;box-shadow:0 6px 18px -8px var(--acc)}
+.btn.alt{background:var(--bg);color:var(--ink);border-color:var(--line);box-shadow:none}
+nav a[aria-current="page"]{color:var(--acc);border-bottom-color:var(--acc)}
+.logo{display:flex;align-items:center;gap:10px}
+.mk{height:34px;width:46px;color:var(--acc)}
+.ft{height:70px;width:117px;color:var(--ink)}
+footer{align-items:center}
+header{background:color-mix(in srgb,var(--soft) 62%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+body::before{background:color-mix(in srgb,var(--soft) 62%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+
+/* --- шапка: логотип, меню, перемикач мови --- */
+.logo{text-decoration:none;color:inherit}
+nav a{text-decoration:none}
+.lang{display:inline-flex;gap:2px;padding:3px;background:var(--bg);border-radius:99px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.lang button{font:500 12px Inter,sans-serif;letter-spacing:.04em;border:0;background:none;color:var(--muted);padding:5px 11px;border-radius:99px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--acc);color:#fff}
+@media (max-width:640px){header{flex-wrap:wrap;row-gap:10px}nav{order:3;width:100%;justify-content:space-between}}
