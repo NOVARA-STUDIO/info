@@ -1,4 +1,3 @@
-/* Сторінка «Проєкти»: фільтри, сітка, вікно проєкту, команда */
 .filters{display:flex;flex-wrap:wrap;gap:22px;margin-bottom:34px}
 .filters button{font:400 14px Inter,sans-serif;background:none;border:0;border-bottom:1px solid transparent;color:var(--muted);padding:3px 0;cursor:pointer}
 .filters button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--ink)}
