@@ -1,9 +1,6 @@
-/* Дані сторінки «Підтримати»: лише криптовалюта.
-   УВАГА: адреси нижче це заглушки. Замініть на свої справжні гаманці. */
 Novara.data.support = {
   wallets: [
-    { coin: "USDT", network: "TRC20 (Tron)", address: "your-usdt-trc20-address" },
-    { coin: "BTC", network: "Bitcoin", address: "your-bitcoin-address" },
-    { coin: "ETH", network: "Ethereum (ERC20)", address: "your-ethereum-address" }
+    { coin: "BTC", network: "Bitcoin (Trust Wallet)", address: "bc1qjzgl3gtdwlrvdwr5nwpw579jmep6a0gpa05yvq" },
+    { coin: "ETH", network: "Ethereum (Trust Wallet)", address: "0x5B7B308d2931E2b58A1e32F1cba90b6426893aDe" }
   ]
 };
