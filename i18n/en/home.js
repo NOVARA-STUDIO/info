@@ -5,7 +5,6 @@ Novara.addStrings("en", "home", {
   lead: "NOVARA STUDIO™ builds digital products: apps, platforms, games.",
   ctaProjects: "View projects", ctaSupport: "Support us",
   stats: [
-    { value: "1", label: "projects completed" },
-    { value: "0M", label: "downloads of our products" },
+    { value: "1", label: "projects completed" }
   ]
 });
