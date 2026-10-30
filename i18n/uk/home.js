@@ -5,7 +5,6 @@ Novara.addStrings("uk", "home", {
   lead: "NOVARA STUDIO™ створює цифрові продукти: застосунки платформи, ігри.",
   ctaProjects: "Дивитися проєкти", ctaSupport: "Підтримати",
   stats: [
-    { value: "1", label: "завершених проєктів" },
-    { value: "0 млн", label: "завантажень наших продуктів" }
+    { value: "1", label: "завершених проєктів" }
   ]
 });
